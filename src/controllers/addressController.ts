@@ -19,7 +19,7 @@ class addressController {
         return res.status(200).json(response.data);
       }).catch(err => {
         console.log(err);
-        return res.status(400).json({ error: "Bad Resquest" });
+        return res.status(400).json({ error: "Bad Request" });
       });
       } catch (error) {
           res.status(400).json({ msg: "Proxy error" });
